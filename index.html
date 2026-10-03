@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gemie Designs | Creative Designs. Smart Solutions.</title>
+<meta name="description" content="Gemie Designs provides graphic design, computer software solutions, screen printing and jumping castle hiring.">
+<style>
+:root{--gold:#d4af37;--dark:#111;--dark2:#1b1b1b;--white:#fff;--light:#f7f7f7;--muted:#777}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#222;line-height:1.6;background:#fff}
+header{position:sticky;top:0;z-index:100;background:rgba(17,17,17,.97);box-shadow:0 2px 12px #0004}
+.nav{max-width:1150px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{color:#fff;font-size:1.35rem;font-weight:800;letter-spacing:.5px}.logo span{color:var(--gold)}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:.92rem}
+nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid #555;color:#fff;padding:7px 10px;border-radius:5px}
+.hero{min-height:78vh;background:linear-gradient(135deg,#111 0%,#222 55%,#0d0d0d 100%);color:#fff;display:flex;align-items:center}
+.hero-inner{max-width:1150px;margin:auto;padding:90px 20px;width:100%}
+.badge{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:7px 13px;border-radius:30px;font-size:.82rem;margin-bottom:20px}
+.hero h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.03;max-width:850px}
+.hero h1 span{color:var(--gold)}
+.hero p{max-width:700px;margin:22px 0;font-size:1.15rem;color:#ddd}
+.btn{display:inline-block;text-decoration:none;border-radius:7px;padding:12px 19px;margin:5px;font-weight:700}
+.btn-gold{background:var(--gold);color:#111}.btn-outline{border:1px solid #aaa;color:#fff}
+section{padding:75px 20px}.container{max-width:1150px;margin:auto}
+.section-head{text-align:center;max-width:760px;margin:0 auto 42px}.section-head h2{font-size:2.2rem;margin-bottom:10px}.section-head h2 span{color:var(--gold)}
+.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e7e7e7;border-radius:14px;padding:25px;box-shadow:0 8px 25px #0000000b}
+.card .icon{font-size:2rem;margin-bottom:12px}.card h3{margin-bottom:8px}.card p{color:#666;font-size:.95rem}
+.dark{background:var(--dark);color:#fff}.dark .section-head p{color:#bbb}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.about-box{background:#222;border:1px solid #444;border-radius:16px;padding:30px}
+.about-box strong{color:var(--gold)}
+.list{list-style:none;margin-top:20px}.list li{margin:10px 0}.list li::before{content:"✓";color:var(--gold);font-weight:bold;margin-right:10px}
+.services{background:var(--light)}
+.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.service{border-radius:16px;padding:30px;background:#fff;border-top:4px solid var(--gold);box-shadow:0 8px 25px #0000000b}
+.service h3{margin-bottom:10px}.service ul{margin:14px 0 0 18px;color:#666}
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.portfolio .item{height:190px;border-radius:14px;background:linear-gradient(135deg,#191919,#555);display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px;border:1px solid #333}
+.portfolio .item span{color:var(--gold);font-weight:bold;font-size:1.2rem}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.step{text-align:center;padding:20px}.num{width:45px;height:45px;border-radius:50%;background:var(--gold);display:grid;place-items:center;margin:0 auto 12px;font-weight:800}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}
+.contact-info{background:#111;color:#fff;border-radius:16px;padding:32px}.contact-info p{margin:14px 0;color:#ccc}.contact-info strong{color:var(--gold)}
+form{display:grid;gap:13px}.row{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+input,textarea,select{width:100%;padding:13px;border:1px solid #ddd;border-radius:7px;font:inherit}textarea{min-height:130px;resize:vertical}
+footer{background:#0b0b0b;color:#bbb;text-align:center;padding:35px 20px}.footer-brand{color:#fff;font-weight:800;font-size:1.2rem}.footer-brand span{color:var(--gold)}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;text-decoration:none;border-radius:50px;padding:13px 18px;font-weight:bold;box-shadow:0 5px 20px #0004;z-index:99}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.about,.contact{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}nav{display:none}.menu{display:block}}
+@media(max-width:560px){.grid,.portfolio,.steps{grid-template-columns:1fr}.row{grid-template-columns:1fr}.hero{min-height:72vh}.hero-inner{padding-top:65px}section{padding:58px 16px}.hero p{font-size:1rem}}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<a class="logo" href="#home">Gemie <span>Designs</span></a>
+<button class="menu" onclick="toggleNav()">☰ Menu</button>
+<nav id="navlinks">
+<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="badge">CREATIVE • DIGITAL • PRINT • EVENTS</div>
+<h1>Creative Designs.<br><span>Smart Solutions.</span></h1>
+<p>Gemie Designs helps individuals, businesses and organizations turn ideas into professional designs, digital solutions, printed products and memorable events.</p>
+<a class="btn btn-gold" href="#services">Explore Services</a>
+<a class="btn btn-outline" href="#contact">Contact Us</a>
+</div>
+</section>
+
+<section id="about">
+<div class="container about">
+<div>
+<div class="section-head" style="text-align:left;margin:0 0 20px"><h2>About <span>Gemie Designs</span></h2></div>
+<p>Gemie Designs is a creative and technology-focused business offering graphic design, computer software solutions, screen printing and jumping castle hiring.</p>
+<p style="margin-top:14px">Our aim is to combine creativity, technology and dependable service to give clients practical and professional solutions.</p>
+<ul class="list">
+<li>Creative and professional work</li><li>Affordable solutions</li><li>Customer-focused service</li><li>Designs for individuals, businesses and organizations</li>
+</ul>
+</div>
+<div class="about-box">
+<h3>Our Mission</h3><p>To provide creative, reliable and accessible design, technology, printing and event solutions.</p>
+<h3 style="margin-top:25px">Our Vision</h3><p>To grow into a trusted creative and digital solutions brand recognized for quality and innovation.</p>
+</div>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="container">
+<div class="section-head"><h2>Our <span>Services</span></h2><p>Professional services for your personal, business, organizational and event needs.</p></div>
+<div class="service-grid">
+<div class="service"><div class="icon">🎨</div><h3>Graphic Design</h3><p>Professional visual designs that help your brand and message stand out.</p><ul><li>Logo Design</li><li>Flyers & Posters</li><li>Brochures</li><li>Business Cards</li><li>ID Cards & Certificates</li><li>Banners & Social Media Designs</li></ul></div>
+<div class="service"><div class="icon">💻</div><h3>Computer Software Solutions</h3><p>Practical computer software assistance for individuals and businesses.</p><ul><li>Software Installation</li><li>Software Setup & Configuration</li><li>Software Troubleshooting</li><li>Business Software Solutions</li><li>Basic Computer Software Support</li></ul></div>
+<div class="service"><div class="icon">👕</div><h3>Screen Printing</h3><p>Custom printing for businesses, organizations, teams, events and groups.</p><ul><li>T-Shirt Printing</li><li>Business Branding</li><li>Event & Group Printing</li><li>Custom Printing</li></ul></div>
+<div class="service"><div class="icon">🎪</div><h3>Jumping Castle Hiring</h3><p>Add fun and excitement to children's and family events.</p><ul><li>Birthday Parties</li><li>School Events</li><li>Church Events</li><li>Community Events</li><li>Family Celebrations</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="dark" id="portfolio">
+<div class="container">
+<div class="section-head"><h2>Our <span>Portfolio</span></h2><p>Replace these placeholders with your actual Gemie Designs project images.</p></div>
+<div class="portfolio">
+<div class="item"><span>LOGO DESIGN<br><small>Upload project image</small></span></div>
+<div class="item"><span>FLYERS & POSTERS<br><small>Upload project image</small></span></div>
+<div class="item"><span>BROCHURES<br><small>Upload project image</small></span></div>
+<div class="item"><span>BUSINESS BRANDING<br><small>Upload project image</small></span></div>
+<div class="item"><span>CHURCH & EVENTS<br><small>Upload project image</small></span></div>
+<div class="item"><span>SOCIAL MEDIA<br><small>Upload project image</small></span></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-head"><h2>Why Choose <span>Gemie Designs?</span></h2></div>
+<div class="grid">
+<div class="card"><div class="icon">✨</div><h3>Creative</h3><p>We turn ideas into attractive visual solutions.</p></div>
+<div class="card"><div class="icon">💼</div><h3>Professional</h3><p>We focus on clean, useful and professional results.</p></div>
+<div class="card"><div class="icon">🤝</div><h3>Reliable</h3><p>We value communication, deadlines and customer satisfaction.</p></div>
+<div class="card"><div class="icon">🚀</div><h3>One-Stop Solution</h3><p>Design, software, printing and event services in one place.</p></div>
+</div>
+</div>
+</section>
+
+<section class="services">
+<div class="container">
+<div class="section-head"><h2>How It <span>Works</span></h2></div>
+<div class="steps">
+<div class="step"><div class="num">1</div><h3>Contact</h3><p>Tell us what you need.</p></div>
+<div class="step"><div class="num">2</div><h3>Discuss</h3><p>We understand your idea.</p></div>
+<div class="step"><div class="num">3</div><h3>Create</h3><p>We prepare your solution.</p></div>
+<div class="step"><div class="num">4</div><h3>Review</h3><p>You check the work.</p></div>
+<div class="step"><div class="num">5</div><h3>Deliver</h3><p>We provide the final service.</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-head"><h2>Let's Create <span>Something Great</span></h2><p>Have a design idea, software problem, printing project or event coming up?</p></div>
+<div class="contact">
+<div class="contact-info">
+<h3>Contact Gemie Designs</h3>
+<p><strong>Phone / WhatsApp</strong><br>0994235310</p>
+<p><strong>Email</strong><br>preciouschagunda55@gmail.com</p>
+<p><strong>Services</strong><br>Graphic Design • Software Solutions • Screen Printing • Jumping Castle Hiring</p>
+<p>For a quotation, send us your project details and we will discuss the requirements with you.</p>
+<a class="btn btn-gold" href="https://wa.me/265994235310" target="_blank">WhatsApp Us</a>
+</div>
+<form onsubmit="sendWhatsApp(event)">
+<div class="row"><input id="name" required placeholder="Your name"><input id="phone" required placeholder="Phone / WhatsApp"></div>
+<select id="service" required><option value="">Select a service</option><option>Graphic Design</option><option>Computer Software Solutions</option><option>Screen Printing</option><option>Jumping Castle Hiring</option><option>Other</option></select>
+<textarea id="message" required placeholder="Tell us what you need..."></textarea>
+<button class="btn btn-gold" type="submit">Send Request on WhatsApp</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="footer-brand">Gemie <span>Designs</span></div>
+<p>Creative Designs. Smart Solutions.</p>
+<p style="margin-top:10px">Graphic Design | Software Solutions | Screen Printing | Jumping Castle Hiring</p>
+<p style="margin-top:18px;font-size:.85rem">© 2026 Gemie Designs. All Rights Reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/265994235310" target="_blank">WhatsApp</a>
+
+<script>
+function toggleNav(){const n=document.getElementById('navlinks');n.style.display=n.style.display==='block'?'none':'block';}
+function sendWhatsApp(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value, phone=document.getElementById('phone').value;
+ const service=document.getElementById('service').value, msg=document.getElementById('message').value;
+ const text=`Hello Gemie Designs,%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service)}%0AProject: ${encodeURIComponent(msg)}`;
+ window.open(`https://wa.me/265994235310?text=${text}`,'_blank');
+}
+</script>
+</body>
+</html>
